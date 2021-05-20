@@ -9,7 +9,7 @@ Give a summary description of Four design patterns that you choose from the foll
 
 > Do not add diagrams, and do not try to give a complete description of the patterns as found in the books. Rather think of how you would explain the essential ideas of these patterns in a few sentences to a colleague while drinking coffee.
 
-#Composite Design Pattern
+### Composite Design Pattern
 
 The **basic idea** is where there is a need to create objects which represent a tree structure. this pattern allows to treat individual object (leaf object) and composite object uniformly (equally). 
 
@@ -21,7 +21,7 @@ As we know that this design pattern allows to treat leaf and composite objects e
 
 **Main disadvantage:** Complexity of making objects and implementing the tree data structure.
 
-**Decorator Design Pattern**
+### Decorator Design Pattern
 **Basic idea**
 It allows user to add new functionality to an existing object without altering its already existing structure. Also called Wrapper Design Pattern and comes under structural design patterns. In simple words it attach additional responsibilities to an object dynamically without altering the existing structure. It act as wrapper as it wraps the original object and allows us to add additional functionality at runtime.
 
@@ -31,7 +31,7 @@ So basically you are wrapping yourself with clothes according to weather require
 
 **Disadvantage:** High complexity of software (especially decorator interface)
 
-**Prototype Design Pattern**
+### Prototype Design Pattern
 **Basic Idea** is to create a new object from the existing object that means it clone the existing object into a new object with its data in it. It avoids the expensive operation of the creation of a new object. This pattern mostly used when object creation is an expensive operation. It is also a creational design pattern.
 By shallow copy & deep copy allows to achieve Prototype or cloning.
 **Example:** In the organization we need to build a salary structure according to education degree and from college tier so we have different parameters to define salary structure. Creating separate objects for the individual degree will lead to a lot of object creation which we can avoid using this pattern.
@@ -43,7 +43,7 @@ Optimizing the code where multiple objects are having similar data.
 **Disadvantages**
 Difficult to implement in already existing projects as a class must have an implementation of clone() methods.Chances of using different objects internally.
 
-**State Design Pattern**
+### State Design Pattern
 **Basic Idea** State design pattern allows an object to alter its behaviour when its internal state is changing so in a nutshell it allows an object to change its complete behaviour depending on its internal state.
 So if you consider some object and maybe there are 2 states called state A & state B now which operation object is going to perform is completely decided based on the states over here.
 **Example:** Consider an employee portal where you have different services like Employee Services Site, HR Service Site, Alumni Portal & Separation Request Site. This visibility of sites are managed via state of employee i.e(Active & InActive). Active employees having access to Employee Service,HR Service and Separation request and InActive Employees are having access to only alumni portal. All these changes are handled on state change when an active user raises a separation request.
