@@ -9,7 +9,7 @@ Give a summary description of Four design patterns that you choose from the foll
 
 > Do not add diagrams, and do not try to give a complete description of the patterns as found in the books. Rather think of how you would explain the essential ideas of these patterns in a few sentences to a colleague while drinking coffee.
 
-**Composite Design Pattern**
+**###Composite Design Pattern**
 The **basic idea** is where there is a need to create objects which represent a tree structure. this pattern allows to treat individual object (leaf object) and composite object uniformly (equally). 
 
 **Example :**, An organization have organization represented in a tree structure, suppose, on first level we have General Manager then under this we have 4-6 Sub Managers then under each manager we have several Developers/Technicians/Test. This represents a hierarchy (tree structure).
