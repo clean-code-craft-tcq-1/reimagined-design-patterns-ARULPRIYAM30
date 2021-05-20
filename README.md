@@ -27,6 +27,7 @@ It allows user to add new functionality to an existing object without altering i
 
  **Example :** ‘Wearing Clothes’ is a good example to understand this design pattern. So in winters, if you are feeling too cold you simply wrap yourself using a sweater. Even after wearing a sweater you are feeling cold, so you can wrap jacket around you. Now suppose it starts raining so you can put raincoat on. So usually we don’t wear these clothes, if we don’t need them we can easily remove them.
 So basically you are wrapping yourself with clothes according to weather requirement similarly decorator design pattern allows to add new functionality at runtime without disturbing the existing structure of the object.It solves the problem to add behavior or state to individual object at runtime. Inheritance is not feasible because it is static and applies to an entire class.
+
 **Advantage:** It is flexible than inheritance because inheritance adds responsibility at compile time but decorator pattern adds at run time.
 
 **Disadvantage:** High complexity of software (especially decorator interface)
@@ -34,6 +35,7 @@ So basically you are wrapping yourself with clothes according to weather require
 ### Prototype Design Pattern
 **Basic Idea** is to create a new object from the existing object that means it clone the existing object into a new object with its data in it. It avoids the expensive operation of the creation of a new object. This pattern mostly used when object creation is an expensive operation. It is also a creational design pattern.
 By shallow copy & deep copy allows to achieve Prototype or cloning.
+
 **Example:** In the organization we need to build a salary structure according to education degree and from college tier so we have different parameters to define salary structure. Creating separate objects for the individual degree will lead to a lot of object creation which we can avoid using this pattern.
 
 **Advantage**
@@ -46,6 +48,7 @@ Difficult to implement in already existing projects as a class must have an impl
 ### State Design Pattern
 **Basic Idea** State design pattern allows an object to alter its behaviour when its internal state is changing so in a nutshell it allows an object to change its complete behaviour depending on its internal state.
 So if you consider some object and maybe there are 2 states called state A & state B now which operation object is going to perform is completely decided based on the states over here.
+
 **Example:** Consider an employee portal where you have different services like Employee Services Site, HR Service Site, Alumni Portal & Separation Request Site. This visibility of sites are managed via state of employee i.e(Active & InActive). Active employees having access to Employee Service,HR Service and Separation request and InActive Employees are having access to only alumni portal. All these changes are handled on state change when an active user raises a separation request.
 
 **Advantages**
